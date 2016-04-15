@@ -1,0 +1,16 @@
+# Use /etc/hosts to change the dns to 127.0.0.1, see bin/setup
+APP_HOST: 'event-countdown.dev'
+APP_PORT: '3000'
+
+# Secrets
+SECRET_KEY_BASE: 'rake secret'
+
+# This is used to seed your database
+# Use a random password for develop/master/testing
+ADMIN_EMAIL: <yourname>+<application>@renuo.ch
+ADMIN_PASSWORD: 'developer'
+
+# For the production environment on Heroku we use the DATABASE_URL. The format of it is as follows:
+# "postgres://myuser:mypass@localhost/somedatabase"
+# Note that this ENV variable is already configured by Heroku when installing the PG extension.
+# For the local environment the defaults should be ok. If you need to override the config, use the DATABASE_URL.
